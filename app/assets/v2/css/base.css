@@ -1118,13 +1118,31 @@ body.bounty_details #title {
     border-color: black;
 }
 
-#interest_list{
-    margin-left: 0px;
-    padding-left: 0px;
+#interest_list {
+    margin-left: 0;
+    padding-left: 0;
 }
-#interest_list li{
+
+#interest_list li {
     list-style: none;
 }
+
+input.is-invalid {
+  border-color: red;
+}
+
+.faucet_response {
+  display:none;
+}
+
+.faucet_response .frheader {
+  font-size: xx-large;
+}
+
+.faucet_response .frmessage {
+  font-size: large;
+}
+
 @media (max-width: 1350px) {
     .profile_details .bounties li div.details{
         width: 400px;
