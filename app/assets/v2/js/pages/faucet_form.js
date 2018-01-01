@@ -21,7 +21,7 @@
           $('#githubProfile').addClass('is-invalid-error');
           $('#githubProfileHelpBlock').html('We have a pending or processed faucet contribution for that Github user').show();
         }
-        $("#submitFaucet").removeAttr("disabled");
+        document.getElementById("submitFaucet").removeAttribute("disabled");
       });
     });
     $('#githubProfile').on('focus', function() {
@@ -42,8 +42,8 @@
     $('#submitFaucet').on('click', function(e) {
       e.preventDefault()
       if(e.target.hasAttribute('disabled') ||
-       $('#githubProfile').is(['is-invalid']) ||
-       $('#emailAddress').is(['is-invalid']) ||
+       $('#githubProfile').hasAttribute('is-invalid') ||
+       $('#emailAddress').hasAttribute('is-invalid') ||
        $('#githubProfile').val()==='' ||
        $('#emailAddress').val()==='') {
         return;
