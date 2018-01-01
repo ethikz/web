@@ -296,7 +296,7 @@ p a {
 }
 
 .btn-warning:hover, .btn-success:hover, .btn-info {
-      cursor: pointer;
+    cursor: pointer;
 }
 
 .btn-info:hover {
